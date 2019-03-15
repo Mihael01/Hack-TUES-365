@@ -239,14 +239,6 @@ F 3 "~" H 8700 3050 50  0001 C CNN
 	1    8700 3050
 	-1   0    0    1   
 $EndComp
-Connection ~ 8500 3050
-Wire Wire Line
-	8500 3050 8400 3050
-Wire Wire Line
-	8500 3050 8700 3050
-Wire Wire Line
-	10050 3050 10200 3050
-Connection ~ 10400 3050
 $Comp
 L Transistor_BJT:2N2219 Q?
 U 1 1 5C8C7983
@@ -295,7 +287,6 @@ Wire Wire Line
 	9000 2950 8900 2950
 Wire Wire Line
 	8900 2950 8900 3050
-Connection ~ 8900 3050
 $Comp
 L Device:R R3
 U 1 1 5C942F30
@@ -368,8 +359,6 @@ $EndComp
 Wire Wire Line
 	8950 4100 8950 4000
 Wire Wire Line
-	8400 4000 8400 3050
-Wire Wire Line
 	8400 4000 8950 4000
 $Comp
 L Relay:DIPxx-1Cxx-51x K?
@@ -403,17 +392,6 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 $EndComp
 Wire Wire Line
 	7850 2350 7850 2950
-$Comp
-L pspice:DIODE D?
-U 1 1 5C962393
-P 7550 3050
-F 0 "D?" V 7550 2922 50  0000 R CNN
-F 1 "DIODE" V 7505 2922 50  0001 R CNN
-F 2 "" H 7550 3050 50  0001 C CNN
-F 3 "~" H 7550 3050 50  0001 C CNN
-	1    7550 3050
-	-1   0    0    1   
-$EndComp
 $Comp
 L Transistor_BJT:2N2219 Q?
 U 1 1 5C96239D
@@ -519,12 +497,6 @@ Wire Wire Line
 	7350 3050 7250 3050
 Wire Wire Line
 	7750 3050 7800 3050
-Connection ~ 7750 3050
-Wire Wire Line
-	7250 3050 7150 3050
-Wire Wire Line
-	7150 4000 7150 3050
-Connection ~ 7250 3050
 Wire Wire Line
 	7450 4100 7450 4000
 Wire Wire Line
@@ -538,7 +510,6 @@ Wire Wire Line
 	6750 4300 7150 4300
 Wire Wire Line
 	7150 4300 7150 4000
-Connection ~ 7150 4000
 Connection ~ 8000 4900
 $Comp
 L Device:Jumper JP?
@@ -578,6 +549,349 @@ F 3 "" H 6750 5350 50  0001 C CNN
 	1    6750 5350
 	-1   0    0    1   
 $EndComp
+Connection ~ 10400 3050
 Wire Wire Line
-	6500 4900 6750 4900
+	8400 2350 8400 3050
+Connection ~ 8900 3050
+Wire Wire Line
+	8500 3050 8400 3050
+Connection ~ 8400 3050
+Wire Wire Line
+	8400 3050 8400 4000
+Connection ~ 7750 3050
+$Comp
+L pspice:DIODE D?
+U 1 1 5C962393
+P 7550 3050
+F 0 "D?" V 7550 2922 50  0000 R CNN
+F 1 "DIODE" V 7505 2922 50  0001 R CNN
+F 2 "" H 7550 3050 50  0001 C CNN
+F 3 "~" H 7550 3050 50  0001 C CNN
+	1    7550 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 1500 6700 1950
+Wire Wire Line
+	6350 1500 6700 1500
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 5C9B1391
+P 6150 2150
+F 0 "K?" H 6580 2196 50  0001 L CNN
+F 1 "DIPxx-1Cxx-51x" H 6580 2150 50  0001 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 6600 2100 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 6150 2150 50  0001 C CNN
+	1    6150 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 2350 6450 2950
+Wire Wire Line
+	6450 2950 6350 2950
+Wire Wire Line
+	6350 2950 6350 3050
+$Comp
+L pspice:DIODE D?
+U 1 1 5C9B4E98
+P 6150 3050
+F 0 "D?" V 6150 2922 50  0000 R CNN
+F 1 "DIODE" V 6105 2922 50  0001 R CNN
+F 2 "" H 6150 3050 50  0001 C CNN
+F 3 "~" H 6150 3050 50  0001 C CNN
+	1    6150 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 2350 5850 3050
+Wire Wire Line
+	6450 1950 6700 1950
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5C9C17B3
+P 6550 3150
+F 0 "Q?" H 6740 3196 50  0001 L CNN
+F 1 "2N2219" H 6740 3150 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 6750 3075 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 6550 3150 50  0001 L CNN
+	1    6550 3150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6350 3050
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C9C17BE
+P 6750 3300
+F 0 "#PWR?" H 6750 3050 50  0001 C CNN
+F 1 "GNDREF" H 6755 3127 50  0001 C CNN
+F 2 "" H 6750 3300 50  0001 C CNN
+F 3 "" H 6750 3300 50  0001 C CNN
+	1    6750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3050 6750 3300
+Wire Wire Line
+	5850 3050 5950 3050
+Connection ~ 7150 4000
+Connection ~ 7250 3050
+Wire Wire Line
+	7150 4000 7150 3050
+Wire Wire Line
+	7250 3050 7150 3050
+Wire Wire Line
+	5750 4000 5750 3050
+Wire Wire Line
+	5850 3050 5750 3050
+Connection ~ 5850 3050
+Wire Wire Line
+	6550 4100 6550 3800
+$Comp
+L Device:R R?
+U 1 1 5C9D96AF
+P 6550 3650
+F 0 "R?" V 6435 3650 50  0000 C CNN
+F 1 "R" V 6434 3650 50  0001 C CNN
+F 2 "" V 6480 3650 50  0001 C CNN
+F 3 "~" H 6550 3650 50  0001 C CNN
+	1    6550 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3500 6550 3350
+Wire Wire Line
+	6550 4100 6200 4100
+$Comp
+L Isolator:TLP185 U?
+U 1 1 5C9E3510
+P 6100 4400
+F 0 "U?" H 6100 4725 50  0001 C CNN
+F 1 "TLP185" H 6100 4633 50  0001 C CNN
+F 2 "Package_SO:SOIC-4_4.55x3.7mm_P2.54mm" H 6100 4100 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=11791&prodName=TLP185" H 6100 4400 50  0001 L CNN
+	1    6100 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 4100 6000 4000
+Wire Wire Line
+	5750 4000 6000 4000
+Wire Wire Line
+	5350 4300 5750 4300
+Wire Wire Line
+	5750 4300 5750 4000
+Connection ~ 5750 4000
+$Comp
+L Device:Jumper JP?
+U 1 1 5C9EEDF9
+P 5350 4600
+F 0 "JP?" H 5350 4864 50  0001 C CNN
+F 1 "Jumper" H 5350 4773 50  0001 C CNN
+F 2 "" H 5350 4600 50  0001 C CNN
+F 3 "~" H 5350 4600 50  0001 C CNN
+	1    5350 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C9F5EFC
+P 5850 4900
+F 0 "R?" H 5920 4900 50  0000 L CNN
+F 1 "R" H 5920 4855 50  0001 L CNN
+F 2 "" V 5780 4900 50  0001 C CNN
+F 3 "~" H 5850 4900 50  0001 C CNN
+	1    5850 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 4900 5700 4900
+Wire Wire Line
+	6000 4900 6000 4700
+Wire Wire Line
+	6200 4700 6200 4850
+$Comp
+L pspice:DIODE D?
+U 1 1 5CA00EEF
+P 6200 5050
+F 0 "D?" H 6200 4785 50  0001 C CNN
+F 1 "DS1" H 6200 4876 50  0000 C CNN
+F 2 "" H 6200 5050 50  0001 C CNN
+F 3 "~" H 6200 5050 50  0001 C CNN
+	1    6200 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 5250 6200 5500
+Wire Wire Line
+	5350 4900 5350 5350
+$Comp
+L power:VCC #PWR?
+U 1 1 5CA05215
+P 5350 5350
+F 0 "#PWR?" H 5350 5200 50  0001 C CNN
+F 1 "VCC" V 5368 5477 50  0001 L CNN
+F 2 "" H 5350 5350 50  0001 C CNN
+F 3 "" H 5350 5350 50  0001 C CNN
+	1    5350 5350
+	-1   0    0    1   
+$EndComp
+Connection ~ 5350 4900
+Wire Wire Line
+	5200 1500 5200 1900
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 5CA0E1FC
+P 4600 2100
+F 0 "K?" H 5030 2146 50  0001 L CNN
+F 1 "DIPxx-1Cxx-51x" H 5030 2100 50  0001 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 5050 2050 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 4600 2100 50  0001 C CNN
+	1    4600 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 2300 4300 3000
+Wire Wire Line
+	4300 3000 4400 3000
+Wire Wire Line
+	4200 3950 4200 3000
+Wire Wire Line
+	4300 3000 4200 3000
+Connection ~ 4300 3000
+$Comp
+L pspice:DIODE D?
+U 1 1 5CA17594
+P 4600 3000
+F 0 "D?" V 4600 2872 50  0000 R CNN
+F 1 "DIODE" V 4555 2872 50  0001 R CNN
+F 2 "" H 4600 3000 50  0001 C CNN
+F 3 "~" H 4600 3000 50  0001 C CNN
+	1    4600 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 2300 4900 2900
+Wire Wire Line
+	4800 3000 4800 2900
+Wire Wire Line
+	4800 2900 4900 2900
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 5CA29775
+P 5000 3100
+F 0 "Q?" H 5190 3146 50  0001 L CNN
+F 1 "2N2219" H 5190 3100 50  0001 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 5200 3025 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 5000 3100 50  0001 L CNN
+	1    5000 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5CA2977F
+P 5200 3250
+F 0 "#PWR?" H 5200 3000 50  0001 C CNN
+F 1 "GNDREF" H 5205 3077 50  0001 C CNN
+F 2 "" H 5200 3250 50  0001 C CNN
+F 3 "" H 5200 3250 50  0001 C CNN
+	1    5200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3000 5200 3250
+Wire Wire Line
+	5000 3450 5000 3300
+Connection ~ 4800 3000
+Wire Wire Line
+	5000 4050 5000 3750
+$Comp
+L Device:R R?
+U 1 1 5CA2F6CA
+P 5000 3600
+F 0 "R?" V 4885 3600 50  0000 C CNN
+F 1 "R" V 4884 3600 50  0001 C CNN
+F 2 "" V 4930 3600 50  0001 C CNN
+F 3 "~" H 5000 3600 50  0001 C CNN
+	1    5000 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4050 4650 4050
+$Comp
+L Isolator:TLP185 U?
+U 1 1 5CA351A6
+P 4550 4350
+F 0 "U?" H 4550 4675 50  0001 C CNN
+F 1 "TLP185" H 4550 4583 50  0001 C CNN
+F 2 "Package_SO:SOIC-4_4.55x3.7mm_P2.54mm" H 4550 4050 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=11791&prodName=TLP185" H 4550 4350 50  0001 L CNN
+	1    4550 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 4050 4450 3950
+Wire Wire Line
+	4200 3950 4450 3950
+Wire Wire Line
+	3800 4250 4200 4250
+Wire Wire Line
+	4200 4250 4200 3950
+Connection ~ 4200 3950
+$Comp
+L Device:Jumper JP?
+U 1 1 5CA40696
+P 3800 4550
+F 0 "JP?" H 3800 4814 50  0001 C CNN
+F 1 "Jumper" H 3800 4723 50  0001 C CNN
+F 2 "" H 3800 4550 50  0001 C CNN
+F 3 "~" H 3800 4550 50  0001 C CNN
+	1    3800 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CA45F48
+P 4300 4850
+F 0 "R?" H 4370 4850 50  0000 L CNN
+F 1 "R" H 4370 4805 50  0001 L CNN
+F 2 "" V 4230 4850 50  0001 C CNN
+F 3 "~" H 4300 4850 50  0001 C CNN
+	1    4300 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 4850 4150 4850
+Wire Wire Line
+	4450 4850 4450 4650
+Wire Wire Line
+	4650 4650 4650 4800
+$Comp
+L pspice:DIODE D?
+U 1 1 5CA45F55
+P 4650 5000
+F 0 "D?" H 4650 4735 50  0001 C CNN
+F 1 "DS1" H 4650 4826 50  0000 C CNN
+F 2 "" H 4650 5000 50  0001 C CNN
+F 3 "~" H 4650 5000 50  0001 C CNN
+	1    4650 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 5200 4650 5450
+Wire Wire Line
+	3800 4850 3800 5300
+$Comp
+L power:VCC #PWR?
+U 1 1 5CA4C7CC
+P 3800 5300
+F 0 "#PWR?" H 3800 5150 50  0001 C CNN
+F 1 "VCC" V 3818 5427 50  0001 L CNN
+F 2 "" H 3800 5300 50  0001 C CNN
+F 3 "" H 3800 5300 50  0001 C CNN
+	1    3800 5300
+	-1   0    0    1   
+$EndComp
+Connection ~ 3800 4850
+Wire Wire Line
+	4900 1900 5200 1900
 $EndSCHEMATC
