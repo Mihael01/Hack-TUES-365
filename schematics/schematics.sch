@@ -139,8 +139,8 @@ $Comp
 L Relay:DIPxx-1Cxx-51x K?
 U 1 1 5C8D3DB8
 P 7450 4200
-F 0 "K?" H 7880 4246 50  0000 L CNN
-F 1 "DIPxx-1Cxx-51x" H 7880 4155 50  0000 L CNN
+F 0 "K?" H 7880 4246 50  0001 L CNN
+F 1 "DIPxx-1Cxx-51x" H 7880 4200 50  0001 L CNN
 F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 7900 4150 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 7450 4200 50  0001 C CNN
 	1    7450 4200
