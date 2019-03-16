@@ -7,4 +7,4 @@ to push and if the fastest player is right, others will drink beer.
 However, if the fastest player is wrong, only he/she will drink beer.  
 
 # Schematics
-The circuit for decreasing voltage from 220V to 12V was taken from [Control High Voltage Devices](https://howtomechatronics.com/tutorials/arduino/control-high-voltage-devices-arduino-relay-tutorial/). And full scheme can be found [here](https://drive.google.com/open?id=1aaEmxFsByKZnA9qFmCxOx5QdOd1VNaZ5).
+The circuit for decreasing voltage from 220V to 12V was taken from [here](https://howtomechatronics.com/tutorials/arduino/control-high-voltage-devices-arduino-relay-tutorial/). And full scheme can be found [here](https://drive.google.com/open?id=1aaEmxFsByKZnA9qFmCxOx5QdOd1VNaZ5).
