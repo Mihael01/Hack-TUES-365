@@ -757,4 +757,79 @@ Wire Wire Line
 	7250 1850 8400 1850
 Wire Wire Line
 	5100 1500 5100 1850
+$Comp
+L MCU_Module:Arduino_UNO_R3 A?
+U 1 1 5C8D6248
+P 3050 5900
+F 0 "A?" H 3050 7081 50  0001 C CNN
+F 1 "Arduino_UNO_R3" H 3050 6989 50  0001 C CNN
+F 2 "Module:Arduino_UNO_R3" H 3200 4850 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 2850 6950 50  0001 C CNN
+	1    3050 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C8DB464
+P 1750 3900
+F 0 "SW?" H 1750 4185 50  0000 C CNN
+F 1 "SW_Push" H 1750 4094 50  0000 C CNN
+F 2 "" H 1750 4100 50  0001 C CNN
+F 3 "~" H 1750 4100 50  0001 C CNN
+	1    1750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C8E49D7
+P 2400 3900
+F 0 "SW?" H 2400 4185 50  0000 C CNN
+F 1 "SW_Push" H 2400 4094 50  0000 C CNN
+F 2 "" H 2400 4100 50  0001 C CNN
+F 3 "~" H 2400 4100 50  0001 C CNN
+	1    2400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C8E9DD3
+P 3000 3900
+F 0 "SW?" H 3000 4185 50  0000 C CNN
+F 1 "SW_Push" H 3000 4094 50  0000 C CNN
+F 2 "" H 3000 4100 50  0001 C CNN
+F 3 "~" H 3000 4100 50  0001 C CNN
+	1    3000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C8EEDC9
+P 3550 3900
+F 0 "SW?" H 3550 4185 50  0000 C CNN
+F 1 "SW_Push" H 3550 4094 50  0000 C CNN
+F 2 "" H 3550 4100 50  0001 C CNN
+F 3 "~" H 3550 4100 50  0001 C CNN
+	1    3550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4050 2200 4350
+Wire Wire Line
+	2200 4350 2600 4350
+Connection ~ 2600 4350
+Wire Wire Line
+	2600 4350 3200 4350
+Connection ~ 3200 4350
+Wire Wire Line
+	3200 4350 3750 4350
+Wire Wire Line
+	3750 3900 3750 4350
+Wire Wire Line
+	3200 3900 3200 4350
+Wire Wire Line
+	2600 3900 2600 4350
+Wire Wire Line
+	2200 4050 1950 4050
+Wire Wire Line
+	1950 4050 1950 3900
 $EndSCHEMATC
