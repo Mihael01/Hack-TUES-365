@@ -1,6 +1,6 @@
 # Project name - Optimus Prime beer version
 
-# Idea for the project
+
 
 # Rules
 The purpose of this project is to remember a sequence of colors.
